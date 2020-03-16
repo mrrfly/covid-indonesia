@@ -3,8 +3,11 @@ import { NextSeo } from 'next-seo'
 import fetch from 'isomorphic-unfetch'
 import useSWR from 'swr'
 import Moment from 'react-moment'
+import * as Sentry from '@sentry/browser'
 
 export default function Home() {
+
+    Sentry.init({dsn: "https://0882e92a9f6a457fbc77f46f6e7bb047@sentry.io/4930834"});
     
     const fetcher = async function(...args) {
         const res = await fetch(...args)

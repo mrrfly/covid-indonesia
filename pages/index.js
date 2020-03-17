@@ -47,7 +47,7 @@ export default function Home() {
                         }
                     }}
                 />
-                <link rel="icon" src="/corona2.ico" />
+                <link rel="icon" href="/corona2.ico" />
                 <title>Jumlah Corona / Covid-19 Indonesia</title>
             </Head>
 

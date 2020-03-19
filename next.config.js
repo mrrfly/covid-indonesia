@@ -1,5 +1,7 @@
-const withOffline = require('next-offline')
-
-const nextConfig = {}
-
-module.exports = withOffline(nextConfig)
+const withPWA = require('next-pwa')
+ 
+module.exports = withPWA({
+  pwa: {
+    dest: 'public',
+  }
+})

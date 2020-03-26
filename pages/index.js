@@ -44,7 +44,6 @@ export default function Home(props) {
                 <meta name='msapplication-TileColor' content='#2B5797' />
                 <meta name='msapplication-tap-highlight' content='no' />
                 <meta name='theme-color' content='#000000' />
-                {/* <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' /> */}
 
                 <link rel='apple-touch-icon' sizes='180x180' href='/static/apple-touch-icon.png' />
                 <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon-32x32.png' />
@@ -65,7 +64,6 @@ export default function Home(props) {
                 <meta property='og:url' content='https://corona.ciriung.com' />
                 <meta property='og:image' content='https://corona.ciriung.com/static/apple-touch-icon.png' />
 
-                <link rel="icon" href="/corona2.ico" />
                 <title>Jumlah Corona / Covid-19 Indonesia</title>
             </Head>
 

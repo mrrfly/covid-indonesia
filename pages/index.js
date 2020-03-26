@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { NextSeo } from 'next-seo'
 import fetch from 'isomorphic-unfetch'
 import useSWR from 'swr'
 import Moment from 'react-moment'
@@ -22,9 +21,7 @@ export default function Home(props) {
     Sentry.init({dsn: "https://0882e92a9f6a457fbc77f46f6e7bb047@sentry.io/4930834"});
     
     const initialData = props.data
-    const { data, error } = useSWR(url, fetcher, { initialData, refreshInterval : 100 })
-
-    // const { data, error } = useSWR(url, fetcher, { initialData })
+    const { data, error } = useSWR(url, fetcher, { initialData })
 
     if(error){
         return <div>Data Error</div>
@@ -36,27 +33,6 @@ export default function Home(props) {
     return(
         <div className="container">
             <Head>
-                <NextSeo
-                    openGraph={{
-                        title: 'Corona / Covid-19 Indonesia',
-                        description: 'Informasi Corona / Covid-19 Indonesia',
-                        url: '/',
-                        type: 'profile',
-                        profile: {
-                            firstName: 'MUHAMMAD RAFLY',
-                            lastName: 'RAMADHAN',
-                            username: 'mrrfly',
-                            gender: 'male'
-                        },
-                        images: {
-                            url: 'https://img.techpowerup.org/200316/corona2.png',
-                            width: 850,
-                            height: 650,
-                            alt: 'Logo',
-                        }
-                    }}
-                />
-
                 <meta name='application-name' content='Corona Indonesia' />
                 <meta name='apple-mobile-web-app-capable' content='yes' />
                 <meta name='apple-mobile-web-app-status-bar-style' content='default' />

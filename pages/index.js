@@ -33,6 +33,9 @@ export default function Home(props) {
     return(
         <div className="container">
             <Head>
+                <meta charset='utf-8' />
+                <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+                <meta name='keywords' content='Corona Indonesia, Covid-19 Indonesia, Data Corona Indonesia, Data Covid-19 Indonesia' />
                 <meta name='application-name' content='Corona Indonesia' />
                 <meta name='apple-mobile-web-app-capable' content='yes' />
                 <meta name='apple-mobile-web-app-status-bar-style' content='default' />
@@ -48,7 +51,7 @@ export default function Home(props) {
                 <link rel='apple-touch-icon' sizes='180x180' href='/static/apple-touch-icon.png' />
                 <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon-32x32.png' />
                 <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon-16x16.png' />
-                <link rel='manifest' href='/static/manifest.json' />
+                <link rel='manifest' href='/static/manifest.webmanifest' />
                 <link rel='shortcut icon' href='/corona2.ico' />
 
                 <meta name='twitter:card' content='summary' />

@@ -236,7 +236,7 @@ export default function Home(props) {
                 }
                 `}</style>
 
-                <style jsx global>{`
+            <style jsx global>{`
                 html,
                 body {
                 padding: 0;

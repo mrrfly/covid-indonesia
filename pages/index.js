@@ -49,7 +49,7 @@ export default function Home(props) {
                 <link rel='icon' type='image/png' sizes='32x32' href='/static/favicon-32x32.png' />
                 <link rel='icon' type='image/png' sizes='16x16' href='/static/favicon-16x16.png' />
                 <link rel='manifest' href='/static/manifest.json' />
-                <link rel='shortcut icon' href='/static/favicon.ico' />
+                <link rel='shortcut icon' href='/corona2.ico' />
 
                 <meta name='twitter:card' content='summary' />
                 <meta name='twitter:url' content='https://corona.ciriung.com' />

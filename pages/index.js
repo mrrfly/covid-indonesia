@@ -21,7 +21,7 @@ export default function Home(props) {
     Sentry.init({dsn: "https://0882e92a9f6a457fbc77f46f6e7bb047@sentry.io/4930834"});
     
     const initialData = props.data
-    const { data, error } = useSWR(url, fetcher, { initialData })
+    const { data, error } = useSWR(url, fetcher, { initialData, refreshWhenHidden: true, refreshWhenOffline: true })
 
     if(error){
         return <div>Data Error</div>

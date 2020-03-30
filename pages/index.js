@@ -4,30 +4,24 @@ import useSWR from 'swr'
 import Moment from 'react-moment'
 import * as Sentry from '@sentry/browser'
 
-const fetcher = async function(...args) {
-    const res = await fetch(...args)
-    return res.json()
-}
-
-const url = "https://kawalcovid19.harippe.id/api/summary"
-
-export async function getServerSideProps() {
-    const data = await fetcher(url)
-    return { props: { data } }
-}
-
 export default function Home(props) {
 
     Sentry.init({dsn: "https://0882e92a9f6a457fbc77f46f6e7bb047@sentry.io/4930834"});
+
+    const fetcher = async function(...args) {
+        const res = await fetch(...args)
+        return res.json()
+    }
     
-    const initialData = props.data
-    const { data, error } = useSWR(url, fetcher, { initialData, refreshWhenHidden: true, refreshWhenOffline: true })
+    const url = "https://kawalcovid19.harippe.id/api/summary"
+    
+    const { data, error } = useSWR(url, fetcher)
 
     if(error){
         return <div>Data Error</div>
     }
     if(!data){
-        return <div></div>
+        return <div>Sedang Mengambil Data</div>
     }
 
     return(

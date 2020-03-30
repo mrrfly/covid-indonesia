@@ -15,7 +15,7 @@ export default function Home(props) {
     
     const url = "https://kawalcovid19.harippe.id/api/summary"
     
-    const { data, error } = useSWR(url, fetcher)
+    const { data, error } = useSWR(url, fetcher, { refreshInterval: 100 })
 
     if(error){
         return <div>Data Error</div>

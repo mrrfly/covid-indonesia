@@ -8,16 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@sentry/browser": "^5.14.2",
-    "cypress": "^4.2.0",
+    "@sentry/browser": "^5.15.4",
+    "cypress": "^4.3.0",
     "isomorphic-unfetch": "^3.0.0",
     "moment": "^2.24.0",
-    "next": "9.3.0",
+    "next": "9.3.3",
     "next-pwa": "^2.3.1",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-moment": "^0.9.7",
-    "swr": "^0.1.18"
+    "swr": "^0.2.0"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).",
   "main": "index.js",

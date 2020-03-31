@@ -27,6 +27,7 @@ export default function Home(props) {
     return(
         <div className="container">
             <Head>
+                <meta name="dicoding:email" content="mrrfly.dev@gmail.com" />
                 <meta charset='utf-8' />
                 <meta http-equiv='X-UA-Compatible' content='IE=edge' />
                 <meta name='keywords' content='Corona Indonesia, Covid-19 Indonesia, Data Corona Indonesia, Data Covid-19 Indonesia' />

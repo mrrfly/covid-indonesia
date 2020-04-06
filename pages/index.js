@@ -132,16 +132,14 @@ export default function Home(props) {
 
             <style jsx>{`
                 .container {
-                min-height: 100vh;
-                padding: 0 0.5rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 main {
-                padding: 5rem 0;
                 flex: 1;
                 display: flex;
                 flex-direction: column;
@@ -158,9 +156,7 @@ export default function Home(props) {
                 align-items: center;
                 }
 
-                footer img {
-                margin-left: 0.5rem;
-                }
+                
 
                 footer a {
                 display: flex;
@@ -210,26 +206,24 @@ export default function Home(props) {
                 }
 
                 .grid {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-
-                max-width: 800px;
-                margin-top: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin-top: 1rem;
                 }
 
                 .card {
-                margin: 1vh;
-                width: 100%;
-                flex-basis: 45%;
-                padding: 1.5rem;
-                text-align: left;
-                color: inherit;
-                text-decoration: none;
-                border: 1px solid #eaeaea;
-                border-radius: 10px;
-                transition: color 0.15s ease, border-color 0.15s ease;
+                    margin: 1%;
+                    width: 100%;
+                    flex-basis: 45%;
+                    padding: 1rem;
+                    text-align: left;
+                    color: inherit;
+                    text-decoration: none;
+                    border: 1px solid #eaeaea;
+                    border-radius: 10px;
+                    transition: color 0.15s ease, border-color 0.15s ease;
                 }
 
                 .card:hover,
@@ -251,10 +245,14 @@ export default function Home(props) {
                 }
 
                 @media (max-width: 600px) {
-                .grid {
-                    width: 100%;
-                    flex-direction: column;
-                }
+                    .grid {
+                        width: 90%;
+                        flex-direction: column;
+                    }
+                    .card {
+                        margin-bottom: 1%;
+                        margin-left: 0.4%;
+                    }
                 }
                 `}</style>
 

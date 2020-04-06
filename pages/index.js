@@ -248,6 +248,7 @@ export default function Home(props) {
                     .grid {
                         width: 90%;
                         flex-direction: column;
+                        margin-bottom: 10%;
                     }
                     .card {
                         margin-bottom: 1%;

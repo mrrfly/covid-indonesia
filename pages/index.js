@@ -220,7 +220,7 @@ export default function Home(props) {
                 }
 
                 .card {
-                margin-bottom: 1rem;
+                margin: 1vh;
                 width: 100%;
                 flex-basis: 45%;
                 padding: 1.5rem;

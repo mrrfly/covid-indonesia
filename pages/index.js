@@ -251,7 +251,7 @@ export default function Home(props) {
                     }
                     .card {
                         margin-bottom: 1%;
-                        margin-left: 0.4%;
+                        margin-left: 0.3%;
                     }
                 }
                 `}</style>

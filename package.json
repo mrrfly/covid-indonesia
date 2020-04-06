@@ -17,6 +17,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-moment": "^0.9.7",
+    "react-number-format": "^4.4.1",
     "swr": "^0.2.0"
   },
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).",

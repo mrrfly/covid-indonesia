@@ -3,6 +3,7 @@ import fetch from 'isomorphic-unfetch'
 import useSWR from 'swr'
 import Moment from 'react-moment'
 import * as Sentry from '@sentry/browser'
+import NumberFormat from 'react-number-format'
 
 export default function Home(props) {
 
@@ -82,19 +83,43 @@ export default function Home(props) {
                 <div className="grid">
                     <a className="card">
                         <h3>Positif 😥</h3>
-                        <p>{data.confirmed.value}</p>
+                        <p>
+                            <NumberFormat
+                                thousandSeparator={true}
+                                value={data.confirmed.value}
+                                displayType="text"
+                            />
+                        </p>
                     </a>
                     <a className="card">
                         <h3>Dalam Perawatan 🏥</h3>
-                        <p>{data.activeCare.value}</p>
+                        <p>
+                            <NumberFormat
+                                thousandSeparator={true}
+                                value={data.activeCare.value}
+                                displayType="text"
+                            />
+                        </p>
                     </a>
                     <a className="card">
                         <h3>Sembuh 😍</h3>
-                        <p>{data.recovered.value}</p>
+                        <p>
+                            <NumberFormat
+                                thousandSeparator={true}
+                                value={data.recovered.value}
+                                displayType="text"
+                            />
+                        </p>
                     </a>
                     <a className="card">
                         <h3>Meninggal 😭</h3>
-                        <p>{data.deaths.value}</p>
+                        <p>
+                            <NumberFormat
+                                thousandSeparator={true}
+                                value={data.deaths.value}
+                                displayType="text"
+                            />
+                        </p>
                     </a>
                 </div>
 

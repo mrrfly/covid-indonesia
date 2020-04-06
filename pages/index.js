@@ -63,13 +63,13 @@ export default function Home(props) {
                 <meta property='og:url' content='https://corona.ciriung.com' />
                 <meta property='og:image' content='https://corona.ciriung.com/static/apple-touch-icon.png' />
 
-                <title>Jumlah Corona / Covid-19 Indonesia</title>
+                <title>Jumlah Covid-19 Indonesia</title>
             </Head>
 
             <main>
                 
                 <h1 className="title">
-                    Jumlah Corona / Covid-19 di Indonesia
+                    Jumlah Covid-19 di Indonesia
                 </h1>
                 
                 <p className="description">

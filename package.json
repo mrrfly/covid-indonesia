@@ -26,7 +26,10 @@
   "keywords": [],
   "author": "Muhammad Rafly Ramadhan <mrrfly.dev@gmail.com>",
   "license": "ISC",
-  "repository": "git+https://github.com/mrrfly/covid-indonesia.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrrfly/covid-indonesia.git"
+  },
   "bugs": {
     "url": "https://github.com/mrrfly/covid-indonesia/issues"
   },

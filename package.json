@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@sentry/browser": "^5.15.4",
-    "cypress": "^4.4.1",
+    "cypress": "^4.12.1",
     "isomorphic-unfetch": "^3.0.0",
     "moment": "^2.29.2",
     "next": "12.1.0",
